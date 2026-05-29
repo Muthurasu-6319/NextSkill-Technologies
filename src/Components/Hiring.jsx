@@ -59,7 +59,7 @@ export default function Hiring() {
             <p className="faqDescription">
               Neque accumsan dolor nullam commodo. Odio massa nislkopul lamcorper suspendisse amet amet. Aenean suspendisse eget Fames eget eget nascetur omare.
             </p>
-            <button className="faqCallbackBtn" aria-label="Request a Callback">
+            <button className="faqCallbackBtn" aria-label="Request a Callback" onClick={() => window.showToast()}>
               <span>Request a Callback</span>
               <svg viewBox="0 0 24 24" width="18" height="18" className="btnArrow">
                 <path fill="currentColor" d="M16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8-1.41 1.41z"/>

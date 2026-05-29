@@ -16,7 +16,7 @@ export default function Footer() {
             Tell us what you need, and we'll get in touch with the perfect solution
           </p>
         </div>
-        <a href="#contact" className="footerCtaBtn">
+        <a href="#contact" className="footerCtaBtn" onClick={(e) => { e.preventDefault(); window.showToast(); }}>
           Enquiry Now
           <svg viewBox="0 0 24 24" width="18" height="18" className="footerCtaBtnIcon">
             <path fill="currentColor" d="M16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8-8-8-1.41 1.41z"/>
