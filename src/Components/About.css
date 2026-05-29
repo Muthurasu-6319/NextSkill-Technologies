@@ -1,0 +1,86 @@
+.about {
+    padding: 100px 20px 120px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid rgba(239, 75, 39, 0.05);
+}
+
+.aboutContent {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1.5px solid rgba(0, 0, 0, 0.08);
+    padding: 8px 24px;
+    border-radius: 30px;
+    color: #334155;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.aboutTitle {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.25;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+.aboutText {
+    font-size: 15px;
+    font-weight: 500;
+    color: #475569;
+    line-height: 1.75;
+    text-align: center;
+}
+
+@media (max-width: 991px) {
+    .about {
+        padding: 80px 20px 100px 20px;
+    }
+
+    .aboutTitle {
+        font-size: 34px;
+    }
+
+    .aboutText {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        padding: 60px 16px 80px 16px;
+    }
+
+    .aboutTitle {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .aboutText {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .aboutBadge {
+        padding: 6px 18px;
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+}

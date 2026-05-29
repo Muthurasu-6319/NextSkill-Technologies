@@ -1,0 +1,67 @@
+.recognised {
+  padding: 60px 20px 80px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.recognisedContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recognisedBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.logoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.RecognisedLogosImage {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.95;
+  transition: opacity 0.3s ease;
+}
+
+.RecognisedLogosImage:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .recognised {
+    padding: 40px 16px 60px 16px;
+  }
+
+  .recognisedBadge {
+    padding: 6px 18px;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .logoContainer {
+    padding: 0 10px;
+  }
+}

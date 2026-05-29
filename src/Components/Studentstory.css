@@ -1,0 +1,290 @@
+.studentStorySection {
+  background-color: #fafbfc;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.01) 1px, transparent 1px), 
+    linear-gradient(90deg, rgba(0, 0, 0, 0.01) 1px, transparent 1px), 
+    radial-gradient(circle at 90% 10%, rgba(239, 75, 39, 0.02) 0%, rgba(139, 92, 246, 0.02) 50%, rgba(250, 251, 252, 0) 100%);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
+  padding: 70px 20px 90px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.studentStoryContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.storyBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.storySubtitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.storyHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+  gap: 24px;
+}
+
+.storyHeading {
+  font-size: 48px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+
+.partyEmoji {
+  display: inline-block;
+  animation: waveEmoji 2s infinite ease-in-out;
+  margin-left: 6px;
+}
+
+@keyframes waveEmoji {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(10deg) scale(1.15); }
+}
+
+.socialProofWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  text-align: right;
+}
+
+.socialAvatars {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.socialAvatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2.5px solid #ffffff;
+  object-fit: cover;
+  margin-left: -12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.socialAvatar:hover {
+  transform: translateY(-4px) scale(1.1);
+  z-index: 5;
+}
+
+.socialText {
+  font-size: 13.5px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.storyCard {
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.01);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.storyCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(239, 75, 39, 0.1);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.04);
+}
+
+.storyCardQuote {
+  font-size: 13.5px;
+  color: #475569;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0 0 24px 0;
+  text-align: justify;
+  flex-grow: 1;
+}
+
+.highlightText {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.storyCardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.04);
+  padding-top: 16px;
+  gap: 16px;
+}
+
+.storyCardMeta {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2px;
+}
+
+.storyCardName {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.storyCardRole {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.storyCardAvatarWrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(239, 75, 39, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  flex-shrink: 0;
+}
+
+.storyCardAvatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.storyCard:hover .storyCardAvatar {
+  transform: scale(1.08);
+}
+
+.storyCallbackBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  background: #ef4b27;
+  box-shadow: 0 6px 20px rgba(239, 75, 39, 0.25);
+  outline: none;
+}
+
+.storyCallbackBtn:hover {
+  background: #f15837;
+  box-shadow: 0 8px 24px rgba(239, 75, 39, 0.35);
+  transform: translateY(-2px);
+}
+
+.btnArrow {
+  transition: transform 0.3s ease;
+}
+
+.storyCallbackBtn:hover .btnArrow {
+  transform: translateX(4px);
+}
+
+@media (max-width: 991px) {
+  .storyGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .storyHeading {
+    font-size: 38px;
+  }
+
+  .storySubtitle {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .storyHeaderRow {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 16px;
+  }
+
+  .socialProofWrapper {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .socialAvatars {
+    flex-direction: row;
+  }
+
+  .socialAvatar {
+    margin-left: 0;
+    margin-right: -12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+
+  .storyHeading {
+    font-size: 32px;
+  }
+
+  .storyCardQuote {
+    font-size: 13px;
+  }
+}

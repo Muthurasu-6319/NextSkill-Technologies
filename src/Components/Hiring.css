@@ -1,0 +1,291 @@
+.hiringSection {
+  background-color: #ffffff;
+  padding: 70px 20px 90px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.hiringContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hiringBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.hiringLogoWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+
+.hiringLogoImage {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(85%);
+  transition: all 0.5s ease;
+}
+
+.hiringSection:hover .hiringLogoImage {
+  filter: grayscale(0%) opacity(100%);
+}
+
+.faqContainer {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  gap: 60px;
+  width: 100%;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.faqLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.faqBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.faqTitle {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  letter-spacing: -1px;
+}
+
+.faqDescription {
+  font-size: 14.5px;
+  color: #64748b;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0 0 32px 0;
+}
+
+.faqCallbackBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  background: #ef4b27;
+  box-shadow: 0 6px 20px rgba(239, 75, 39, 0.25);
+  outline: none;
+}
+
+.faqCallbackBtn:hover {
+  background: #f15837;
+  box-shadow: 0 8px 24px rgba(239, 75, 39, 0.35);
+  transform: translateY(-2px);
+}
+
+.btnArrow {
+  transition: transform 0.3s ease;
+}
+
+.faqCallbackBtn:hover .btnArrow {
+  transform: translateX(4px);
+}
+
+.faqRight {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.faqItem {
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.005);
+}
+
+.faqItem:hover {
+  border-color: rgba(239, 75, 39, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.015);
+}
+
+.faqItemActive {
+  border-color: rgba(239, 75, 39, 0.2);
+  box-shadow: 0 10px 24px rgba(239, 75, 39, 0.03);
+}
+
+.faqHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #334155;
+  transition: color 0.3s ease;
+  gap: 16px;
+}
+
+.faqHeader:hover {
+  color: #0f172a;
+}
+
+.faqItemActive .faqHeader {
+  color: #0f172a;
+}
+
+.faqToggleIconWrapper {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: #ffffff;
+}
+
+.faqItem:hover .faqToggleIconWrapper {
+  border-color: rgba(239, 75, 39, 0.2);
+  color: #ef4b27;
+}
+
+.faqItemActive .faqToggleIconWrapper {
+  border-color: #ef4b27;
+  background: #ef4b27;
+  color: #ffffff;
+  transform: rotate(135deg);
+}
+
+.faqToggleIcon {
+  transition: transform 0.3s ease;
+}
+
+.faqBody {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.faqItemActive .faqBody {
+  max-height: 200px;
+}
+
+.faqAnswer {
+  padding: 0 24px 20px 24px;
+  margin: 0;
+  font-size: 14.5px;
+  color: #64748b;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .faqContainer {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .faqTitle {
+    font-size: 32px;
+  }
+
+  .hiringLogoWrapper {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hiringSection {
+    padding: 50px 16px 70px 16px;
+  }
+
+  .hiringLogoWrapper {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-bottom: 5px;
+  }
+
+  .hiringLogoWrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hiringLogoImage {
+    min-width: 720px;
+    max-width: none;
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .faqTitle {
+    font-size: 26px;
+  }
+
+  .faqHeader {
+    padding: 16px 20px;
+    font-size: 15px;
+  }
+
+  .faqAnswer {
+    padding: 0 20px 16px 20px;
+    font-size: 13.5px;
+  }
+}

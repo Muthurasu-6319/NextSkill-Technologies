@@ -1,0 +1,370 @@
+.programsSection {
+  background-color: #fafbfc;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.012) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.012) 1px, transparent 1px),
+    radial-gradient(circle at 10% 10%, rgba(239, 75, 39, 0.03) 0%, rgba(139, 92, 246, 0.03) 50%, rgba(250, 251, 252, 0) 100%);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
+  padding: 60px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.programsContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programsBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.programsTitle {
+  font-size: 38px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 28px;
+  text-align: center;
+  letter-spacing: -1px;
+  max-width: 800px;
+}
+
+.introBox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 18px 24px;
+  max-width: 720px;
+  margin-bottom: 50px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.015);
+  text-align: left;
+}
+
+.introIconWrapper {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.introIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.introTextWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.introDescription {
+  font-size: 14.5px;
+  color: #475569;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.introLink {
+  font-size: 14.5px;
+  color: #ef4b27;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.introLink:hover {
+  color: #d83d1c;
+}
+
+.linkArrow {
+  transition: transform 0.3s ease;
+}
+
+.introLink:hover .linkArrow {
+  transform: translateX(4px);
+}
+
+.programsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  width: 100%;
+  max-width: 900px;
+  justify-content: center;
+}
+
+.programCard {
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.programCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.cardGraphicWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.03);
+}
+
+.academyCard .cardGraphicWrapper {
+  background: #fff5f2;
+}
+
+.internshipCard .cardGraphicWrapper {
+  background: #f5f2ff;
+}
+
+.cardGraphic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.programCard:hover .cardGraphic {
+  transform: scale(1.03);
+}
+
+.cardBody {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.academyCard .cardTitle {
+  color: #ef4b27;
+}
+
+.internshipCard .cardTitle {
+  color: #5b3fd4;
+}
+
+.cardSubtitle {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  min-height: 42px;
+}
+
+.badgeList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.badgeItem {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.academyCard .badgeItem {
+  background: #fff5f2;
+  color: #ef4b27;
+}
+
+.internshipCard .badgeItem {
+  background: #f5f2ff;
+  color: #5b3fd4;
+}
+
+.metaRow {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px dashed rgba(0, 0, 0, 0.08);
+  padding-top: 18px;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.metaCol {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.metaLabel {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.metaValue {
+  font-size: 13.5px;
+  color: #334155;
+  font-weight: 700;
+}
+
+.callBackButton {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 24px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14.5px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+  outline: none;
+  margin-bottom: 16px;
+}
+
+.academyCard .callBackButton {
+  background: #ef4b27;
+  box-shadow: 0 4px 14px rgba(239, 75, 39, 0.25);
+}
+
+.academyCard .callBackButton:hover {
+  background: #f15837;
+  box-shadow: 0 6px 20px rgba(239, 75, 39, 0.35);
+  transform: translateY(-2px);
+}
+
+.internshipCard .callBackButton {
+  background: #5b3fd4;
+  box-shadow: 0 4px 14px rgba(91, 63, 212, 0.25);
+}
+
+.internshipCard .callBackButton:hover {
+  background: #6d54de;
+  box-shadow: 0 6px 20px rgba(91, 63, 212, 0.35);
+  transform: translateY(-2px);
+}
+
+.phoneIcon {
+  transition: transform 0.3s ease;
+}
+
+.callBackButton:hover .phoneIcon {
+  transform: rotate(15deg) scale(1.1);
+}
+
+.knowMoreLink {
+  font-size: 14.5px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: max-content;
+  transition: color 0.3s ease;
+}
+
+.academyCard .knowMoreLink {
+  color: #ef4b27;
+}
+
+.academyCard .knowMoreLink:hover {
+  color: #d83d1c;
+}
+
+.internshipCard .knowMoreLink {
+  color: #5b3fd4;
+}
+
+.internshipCard .knowMoreLink:hover {
+  color: #4930b8;
+}
+
+@media (max-width: 991px) {
+  .programsTitle {
+    font-size: 32px;
+  }
+
+  .programsGrid {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .programsSection {
+    padding: 50px 16px;
+  }
+
+  .introBox {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .programsGrid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 576px) {
+  .programsTitle {
+    font-size: 26px;
+  }
+
+  .cardBody {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,404 @@
+.ourProcessSection {
+  background-color: #ffffff;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    radial-gradient(circle at 15% 35%, rgba(239, 75, 39, 0.07) 0%, rgba(147, 51, 234, 0.04) 50%, #ffffff 100%);
+  background-size: 44px 44px, 44px 44px, 100% 100%;
+  background-position: center;
+  padding: 100px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  border-top: 1px solid rgba(239, 75, 39, 0.05);
+}
+
+.ourProcessContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourProcessBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.ourProcessTitle {
+  font-size: 42px;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 12px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.ourProcessSubtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #64748b;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.processGrid {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timelineContainer {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+.timelineStep {
+  display: flex;
+  gap: 18px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.stepIndicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stepCircle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.activeStepCircle {
+  background: #ef4b27;
+  border-color: #ef4b27;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(239, 75, 39, 0.25);
+}
+
+.stepLine {
+  width: 3px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 4px;
+}
+
+.activeStepLine {
+  background: #ef4b27;
+}
+
+.stepDetails {
+  flex: 1;
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stepHeaderPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  color: #475569;
+  padding: 5px 14px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.activeStepHeaderPill {
+  border-color: #ef4b27;
+  color: #ef4b27;
+  background: rgba(239, 75, 39, 0.04);
+}
+
+.stepDescriptionText {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.55;
+  margin-top: 10px;
+  max-width: 360px;
+  font-weight: 500;
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+.previewCardContainer {
+  flex: 1.1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 640px;
+  width: 100%;
+}
+
+.stackedCardUnderlayTwo {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1.5px solid rgba(0, 0, 0, 0.04);
+  border-radius: 28px;
+  top: 16px;
+  left: 20px;
+  transform: rotate(-2deg);
+  z-index: 1;
+}
+
+.stackedCardUnderlayOne {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid rgba(0, 0, 0, 0.05);
+  border-radius: 28px;
+  top: 8px;
+  left: 10px;
+  transform: rotate(1deg);
+  z-index: 2;
+}
+
+.previewCard {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.06);
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  z-index: 3;
+}
+
+.previewCardDetails {
+  flex: 1.25;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.previewCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.previewCardTitleIcon {
+  font-size: 20px;
+}
+
+.previewCardTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-right: 4px;
+  letter-spacing: -0.3px;
+}
+
+.previewCardBadge {
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.02);
+  color: #475569;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.previewCardDescriptionWrapper {
+  position: relative;
+  display: block;
+  max-width: 90%;
+}
+
+.previewCardDescription {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.floatingQuestion {
+  position: absolute;
+  right: -24px;
+  top: 15px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(239, 75, 39, 0.15);
+  background: #ffffff;
+  color: #ef4b27;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 4px 10px rgba(239, 75, 39, 0.08);
+}
+
+.previewCardPills {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.previewPill {
+  border: 1.5px solid rgba(0, 0, 0, 0.06);
+  background: #ffffff;
+  color: #475569;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.darkPreviewPill {
+  background: #0f172a;
+  color: #ffffff;
+  border-color: #0f172a;
+}
+
+.floatingStars {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #0f172a;
+  border: 1.5px solid #0f172a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 2px;
+}
+
+.previewCardGraphic {
+  flex: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staticProcessWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.staticProcessImage {
+  max-width: 100%;
+  max-height: 210px;
+  height: auto;
+  object-fit: contain;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .ourProcessSection {
+    padding: 80px 20px;
+  }
+
+  .ourProcessTitle {
+    font-size: 34px;
+  }
+
+  .processGrid {
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+  }
+
+  .timelineContainer {
+    width: 100%;
+  }
+
+  .previewCardContainer {
+    max-width: 580px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .previewCard {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .previewCardGraphic {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ourProcessSection {
+    padding: 60px 16px;
+  }
+
+  .ourProcessTitle {
+    font-size: 28px;
+  }
+
+  .ourProcessSubtitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .timelineStep {
+    gap: 16px;
+  }
+
+  .previewCardTitle {
+    font-size: 20px;
+  }
+}

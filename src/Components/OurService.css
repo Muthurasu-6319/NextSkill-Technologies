@@ -1,0 +1,585 @@
+.ourServiceSection {
+  background-color: #0c0d10;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(239, 75, 39, 0.08) 0%, transparent 60%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 30px 30px, 30px 30px;
+  padding: 100px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.ourServiceContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourServiceBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ourServiceTitle {
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  margin-bottom: 36px;
+  text-align: center;
+  letter-spacing: -0.5px;
+}
+
+.tabsContainer1 {
+  margin-bottom: 48px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tabsWrapper {
+  display: inline-flex;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px;
+  border-radius: 100px;
+  gap: 4px;
+}
+
+.tabButton {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px 24px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tabButton:hover {
+  color: #ffffff;
+}
+
+.activeTabButton {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activeTabButton:hover {
+  color: #000000;
+}
+
+.tabIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceCard {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  padding: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+}
+
+.serviceDetails {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.serviceTitle {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.serviceDescription {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.tagItem {
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tagItem:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.learnMore {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.learnMore:hover {
+  gap: 12px;
+}
+
+.arrow {
+  transition: transform 0.2s ease;
+}
+
+.learnMore:hover .arrow {
+  transform: translateX(4px);
+}
+
+.graphicContainer {
+  flex: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 320px;
+}
+
+.graphicWrapper {
+  position: relative;
+  width: 320px;
+  height: 280px;
+}
+
+.staticGraphicWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.staticGraphicImage {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.3));
+}
+
+.centerCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 140px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 5;
+}
+
+.vectorSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.floatingIcon {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 6;
+}
+
+.gitIcon {
+  background: #2b130a;
+  color: #f05032;
+  border: 1.5px solid #f05032;
+  top: 25px;
+  left: 20px;
+  animation: floatOne 5s ease-in-out infinite;
+}
+
+.reactIcon {
+  background: #00222b;
+  color: #61dafb;
+  border: 1.5px solid #61dafb;
+  top: 40px;
+  right: 15px;
+  animation: floatTwo 6s ease-in-out infinite;
+}
+
+.nodeIcon {
+  background: #112811;
+  color: #339933;
+  border: 1.5px solid #339933;
+  bottom: 25px;
+  left: 20px;
+  animation: floatThree 7s ease-in-out infinite;
+}
+
+.codeIcon {
+  background: #001c33;
+  border: 1.5px solid #00a8ff;
+  bottom: 20px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: floatFour 5.5s ease-in-out infinite;
+}
+
+.adsIcon {
+  background: #0a1f33;
+  color: #1877f2;
+  border: 1.5px solid #1877f2;
+  top: 25px;
+  left: 20px;
+  animation: floatOne 5s ease-in-out infinite;
+}
+
+.seoIcon {
+  background: #252b0a;
+  color: #a3e635;
+  border: 1.5px solid #a3e635;
+  top: 40px;
+  right: 15px;
+  animation: floatTwo 6s ease-in-out infinite;
+}
+
+.roiIcon {
+  background: #2b0c1b;
+  color: #ec4899;
+  border: 1.5px solid #ec4899;
+  bottom: 25px;
+  left: 20px;
+  animation: floatThree 7s ease-in-out infinite;
+}
+
+.marketingIcon {
+  background: #1e1e1e;
+  border: 1.5px solid #333333;
+  bottom: 20px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: floatFour 5.5s ease-in-out infinite;
+}
+
+.avatarIcon {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f07e54 0%, #ef4b27 100%);
+  box-shadow: 0 10px 20px rgba(239, 75, 39, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -10px;
+  top: 110px;
+  z-index: 6;
+  animation: floatFive 6.5s ease-in-out infinite;
+}
+
+.devAvatar {
+  background: radial-gradient(circle, #61dafb 0%, #0088cc 100%);
+  box-shadow: 0 10px 20px rgba(0, 136, 204, 0.3);
+}
+
+.mktAvatar {
+  background: radial-gradient(circle, #a3e635 0%, #65a30d 100%);
+  box-shadow: 0 10px 20px rgba(101, 163, 13, 0.3);
+}
+
+.toggleSwitch {
+  position: absolute;
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  background: #ffcfc4;
+  border: 1.5px solid #ef4b27;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  top: 35px;
+  right: 80px;
+  z-index: 6;
+  animation: floatSix 4.8s ease-in-out infinite;
+}
+
+.activeToggle {
+  background: #d3f9d8;
+  border-color: #2b8a3e;
+}
+
+.activeToggle .toggleCircle {
+  background: #2b8a3e;
+  transform: translateX(18px);
+}
+
+.toggleCircle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ef4b27;
+  transform: translateX(18px);
+  transition: transform 0.3s ease;
+}
+
+.uiMiniCard {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+  left: 10px;
+  top: 105px;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  z-index: 6;
+  animation: floatSeven 5.8s ease-in-out infinite;
+}
+
+.devCard {
+  border-color: rgba(97, 218, 251, 0.2);
+}
+
+.mktCard {
+  border-color: rgba(163, 230, 53, 0.2);
+}
+
+.uiMiniCardHeader {
+  height: 6px;
+  border-radius: 2px;
+  background: #ffcfc4;
+  width: 80%;
+}
+
+.devHeader {
+  background: #bbf7d0;
+}
+
+.mktHeader {
+  background: #fef08a;
+}
+
+.uiMiniCardBody {
+  height: 18px;
+  border-radius: 2px;
+  background: #f1f3f5;
+  width: 100%;
+}
+
+.devBody {
+  background: #f3f4f6;
+}
+
+.mktBody {
+  background: #f9fafb;
+}
+
+.callbackButtonContainer {
+  margin-top: 48px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.callbackButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ef4b27;
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 24px rgba(239, 75, 39, 0.25);
+}
+
+.callbackButton:hover {
+  background: #d43c1b;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(239, 75, 39, 0.35);
+}
+
+@keyframes floatOne {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatTwo {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(-3deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatThree {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(-2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatFour {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-9px) rotate(4deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes floatFive {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes floatSix {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-7px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes floatSeven {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(-1deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@media (max-width: 991px) {
+  .ourServiceSection {
+    padding: 80px 20px;
+  }
+
+  .serviceCard {
+    flex-direction: column;
+    gap: 40px;
+    padding: 32px;
+  }
+
+  .serviceDetails {
+    width: 100%;
+  }
+
+  .serviceTitle {
+    font-size: 30px;
+  }
+
+  .graphicContainer {
+    width: 100%;
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabsWrapper {
+    flex-direction: column;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .tabButton {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ourServiceSection {
+    padding: 60px 16px;
+  }
+
+  .ourServiceTitle {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .serviceCard {
+    padding: 32px 20px;
+    border-radius: 24px;
+  }
+
+  .serviceTitle {
+    font-size: 24px;
+  }
+
+  .serviceDescription {
+    font-size: 14px;
+  }
+
+  .tagItem {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .callbackButton {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 28px;
+  }
+}

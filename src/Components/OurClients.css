@@ -1,0 +1,347 @@
+.ourClientsSection {
+  background-color: #ffffff;
+  padding: 60px 20px 80px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.ourClientsContent {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clientsBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 44px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.clientsImageContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
+.clientsImageContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.clientsImageWrapper {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.clientsStripImage {
+  width: 100%;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(75%);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clientsStripImage:hover {
+  filter: grayscale(0%) opacity(100%);
+  transform: scale(1.015);
+}
+
+.reviewsHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 90px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.reviewsHeaderLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.reviewsBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  padding: 8px 24px;
+  border-radius: 30px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.reviewsTitle {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.carouselControls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.controlBtn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+
+.controlBtn:hover {
+  border-color: #ef4b27;
+  color: #ef4b27;
+  box-shadow: 0 4px 12px rgba(239, 75, 39, 0.1);
+  transform: scale(1.05);
+}
+
+.reviewsViewport {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.reviewsViewport::-webkit-scrollbar {
+  display: none;
+}
+
+.reviewsTrack {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  will-change: transform;
+}
+
+.reviewCard {
+  flex: 0 0 33.333%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.reviewCardInner {
+  display: flex;
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 22px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.015);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: stretch;
+  gap: 16px;
+  text-align: left;
+}
+
+.reviewCardInner:hover {
+  transform: translateY(-6px);
+  border-color: rgba(239, 75, 39, 0.15);
+  box-shadow: 0 16px 36px rgba(239, 75, 39, 0.06);
+}
+
+.reviewImageContainer {
+  width: 100px;
+  height: 140px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #f8fafc;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.reviewProfileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.reviewDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 140px;
+}
+
+.reviewQuoteText {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #475569;
+  font-weight: 500;
+  margin: 0 0 12px 0;
+}
+
+.reviewerBottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+  padding-top: 6px;
+}
+
+.reviewerMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.reviewerName {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.reviewerCompany {
+  font-size: 12px;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.reviewerCupLogo {
+  color: #ef4b27;
+  opacity: 0.85;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviewCardInner:hover .reviewerCupLogo {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+@media (max-width: 991px) {
+  .ourClientsSection {
+    padding: 50px 20px;
+  }
+
+  .clientsBadge, .reviewsBadge {
+    margin-bottom: 30px;
+  }
+
+  .reviewsHeader {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .reviewsTitle {
+    font-size: 28px;
+  }
+
+  .reviewCard {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .ourClientsSection {
+    padding: 40px 16px;
+  }
+
+  .clientsImageContainer {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+
+  .clientsImageWrapper {
+    width: 800px;
+    flex-shrink: 0;
+    justify-content: flex-start;
+  }
+
+  .clientsStripImage {
+    max-height: 56px;
+  }
+
+  .reviewsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .carouselControls {
+    display: none;
+  }
+
+  .reviewsViewport {
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding: 10px 0;
+  }
+
+  .reviewsTrack {
+    transform: none !important;
+    width: auto;
+  }
+
+  .reviewCard {
+    flex: 0 0 85%;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reviewsTitle {
+    font-size: 24px;
+  }
+
+  .reviewCardInner {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .reviewImageContainer {
+    width: 100%;
+    height: 160px;
+  }
+
+  .reviewDetailsContainer {
+    height: auto;
+    width: 100%;
+  }
+
+  .reviewQuoteText {
+    margin-bottom: 16px;
+  }
+}
